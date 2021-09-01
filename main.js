@@ -30,7 +30,7 @@ document.getElementById("btn-search").addEventListener("click",()=>{
 let getsearchData=(data)=>{
     
     let alldata=data.docs;
-    console.log(alldata.length)
+    
     let totalresult=0;
 
     if(alldata.length===0){
