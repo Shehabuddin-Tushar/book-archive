@@ -57,10 +57,12 @@ let getsearchData=(data)=>{
                                totalresult+=1;
           
       });
+
+      total.innerHTML=`<h2 class="text-center text-danger mb-5">Total result is ${totalresult}</h2>`;
     }
    
   
-   total.innerHTML=`<h2 class="text-center text-danger mb-5">Total result is ${totalresult}</h2>`
+   
    spinner.style.display="none";
    
 
