@@ -12,6 +12,7 @@ document.getElementById("btn-search").addEventListener("click",()=>{
         if(searchText===""){
             searchbook.value="";
             total.innerHTML="";
+            spinner.style.display="none";
             mainpart.innerHTML="<h2 class='text-center'>Your search field is empty</h2>"
         }else{
             spinner.style.display="block";
