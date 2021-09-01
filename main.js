@@ -34,7 +34,8 @@ let getsearchData=(data)=>{
     let totalresult=0;
 
     if(alldata.length===0){
-        mainpart.innerHTML="<h2 class='text-center'>You do not have any data</h2>"    
+        total.innerHTML="";
+        mainpart.innerHTML="<h2 class='text-center'>You do not have any data</h2>";    
     }else{
         alldata.forEach((book)=>{
         
