@@ -16,7 +16,7 @@ document.getElementById("btn-search").addEventListener("click",()=>{
             mainpart.innerHTML="<h2 class='text-center'>Your search field is empty</h2>"
         }else{
             spinner.style.display="block";
-            fetch(`http://openlibrary.org/search.json?q=${searchText}`)
+            fetch(`https://openlibrary.org/search.json?q=${searchText}`)
             .then(res=>res.json()).then(data=>getsearchData(data));
             searchbook.value="";
             total.innerHTML="";
