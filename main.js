@@ -63,7 +63,7 @@ let getsearchData=(data)=>{
    
   
    
-   spinner.style.display="none";
+      spinner.style.display="none";
    
 
 
