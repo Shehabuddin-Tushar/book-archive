@@ -35,7 +35,7 @@ let getsearchData=(data)=>{
 
     if(alldata.length===0){
         total.innerHTML="";
-        mainpart.innerHTML="<h2 class='text-center'>You do not have any data</h2>";    
+        mainpart.innerHTML="<h2 class='text-center text-danger'>No result found</h2>";    
     }else{
         alldata.forEach((book)=>{
         
@@ -47,7 +47,7 @@ let getsearchData=(data)=>{
                                    <div class="card-body">
                                    <h5 class="card-title">book name: ${book.title}</h5>
                                    <h5 class="card-text text-danger">author name: ${book.author_name?book.author_name[0]:'no author'}</h5>
-                                   <h5 class="card-title">publish data: ${book.publish_date?book.publish_date[0]:"not found"}</h5>
+                                   <h5 class="card-title">publish data: ${book.publish_date?book.publish_date[(book.publish_date).length-1]:"not found"}</h5>
                                    <h5 class="card-title text-primary">publisher name: ${book.publisher?book.publisher[0]:"not found"}</h5>
                                    </div>
                                </div>`;
@@ -58,7 +58,7 @@ let getsearchData=(data)=>{
           
       });
 
-      total.innerHTML=`<h2 class="text-center text-danger mb-5">Total result is ${totalresult}</h2>`;
+      total.innerHTML=`<h2 class="text-center  mb-5">Total result is ${totalresult}</h2>`;
     }
    
   

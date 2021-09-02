@@ -1,3 +1,11 @@
 .myspiner{
     display: none;
 }
+
+.totalresult h2{
+
+    background-color: black;
+    color:#fff;
+    padding: 10px;
+
+}
